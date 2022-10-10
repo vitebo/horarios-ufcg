@@ -1,5 +1,6 @@
 <template>
   <div class="aula" v-if="checkVisibility()">
+    
     <div
       class="box" v-bind:class="[ { 'box-hover': aula.ativaHover }, { 'ativado': aula.ativado }, { 'emConflito': aula.conflito } ]"
       @mouseenter="onMouseOver('enter')" @mouseleave="onMouseOver('leave')"
